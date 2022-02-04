@@ -7,6 +7,8 @@
 
 import UIKit
 
+//this is the detailed view controller containing more details about the cat fact
+
 class SecondViewController: UIViewController{
     
    

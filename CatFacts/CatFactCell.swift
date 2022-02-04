@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+//this is the cat fact cell containing each of the cat facts individuallay
+
 class CatFactCell: UICollectionViewCell {
 
     
