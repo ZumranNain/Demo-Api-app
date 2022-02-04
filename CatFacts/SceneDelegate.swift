@@ -18,6 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let winScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: winScene)
         
+        //created without a storyboard, initialize through scene delegate
+        
         let finalLayout = UICollectionViewFlowLayout()
         
         finalLayout.scrollDirection = .vertical

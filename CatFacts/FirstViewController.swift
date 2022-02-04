@@ -7,6 +7,8 @@
 
 import UIKit
 
+//this contains the tab view in the form of a table view
+
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     var fetchedCat = [CatFacts]()
