@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+//I want to make a new change
 //remmebr to add data cource and delegate for collection view
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
    
