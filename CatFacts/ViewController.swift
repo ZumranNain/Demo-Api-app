@@ -13,6 +13,8 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
    
     
      var fetchedCat = [CatFacts]()
+    
+    var newVariableJUSTCOmmited = ""
      var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
  
     
