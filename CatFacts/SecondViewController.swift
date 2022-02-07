@@ -10,7 +10,7 @@ import UIKit
 class SecondViewController: UIViewController{
     
    
-    var zum = ""
+ //   var zum = ""
  
     var statusLabel: StatusLabel = StatusLabel(verified: false, sentCount: 0)
     var eachFetchedCat: CatFacts = CatFacts(_id: " ", text: " ", user: " ", source: " ", updatedAt: " ", createdAt: " ", deleted: false, used: false, __v: 0, type: " ", status: StatusLabel(verified: false, sentCount: 0))

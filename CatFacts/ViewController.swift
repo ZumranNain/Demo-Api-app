@@ -14,7 +14,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
      var fetchedCat = [CatFacts]()
      var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
-     var Zumran = ""
+ //    var Zumran = ""
  
 
     override func viewDidLoad() {
