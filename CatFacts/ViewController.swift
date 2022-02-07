@@ -14,9 +14,14 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
      var fetchedCat = [CatFacts]()
      var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
+<<<<<<< HEAD
  //    var Zumran = ""
  
+=======
+     var nain = ""
+>>>>>>> ebce18ada1c7dfc779323b4aff6c09d6c588fbdb
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
