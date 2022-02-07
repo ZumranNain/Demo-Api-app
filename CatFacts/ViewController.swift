@@ -3,7 +3,7 @@
 //  CatFacts
 //
 //  Created by Zumran Nain on 2022-01-19.
-//
+// didnt add redundant vars
 
 import UIKit
 
@@ -14,6 +14,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
      var fetchedCat = [CatFacts]()
      var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
+    
 
     
     override func viewDidLoad() {
