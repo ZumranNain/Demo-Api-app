@@ -14,7 +14,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
      var fetchedCat = [CatFacts]()
      var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
-    
+     var nain = ""
 
     
     override func viewDidLoad() {
