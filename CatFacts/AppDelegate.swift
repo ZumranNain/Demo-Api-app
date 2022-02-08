@@ -7,12 +7,16 @@
 
 import UIKit
 
+import FlybitsConcierge
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        Concierge.configure(configuration: nil, contextPlugins: [])
+    
         return true
     }
 

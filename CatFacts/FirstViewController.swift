@@ -5,6 +5,7 @@
 //  Created by Zumran Nain on 2022-01-19.
 //
 
+import FlybitsConcierge
 import UIKit
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
@@ -18,6 +19,22 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let idp = AnonymousConciergeIDP()
+         
+         Concierge.connect(with: idp)  { error in
+             if error == nil{
+                 print("Login successful")
+             }//Flybits failed to auth
+             else{
+                 print(error as Any)
+             }
+             }
+         
+         let concierge = Concierge.viewController(.none, params: [], options: [.displayNavigation])
+         
+         self.present(concierge, animated: true)
+         
         tableView .register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
         tableView.delegate = self

@@ -1,0 +1,1198 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		12C6835E8D198ACC525AE990A9D64304 /* FlybitsCoreConcierge */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E32DCC02BD22E9F2995AE28BA1C56D92 /* Build configuration list for PBXAggregateTarget "FlybitsCoreConcierge" */;
+			buildPhases = (
+				8E48BF47840BFC637672F10D3425C135 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				A28E3429D79EC30EC4E3CD0F46F3704A /* PBXTargetDependency */,
+				1A8674B7390EFFA66469BE77F12D4310 /* PBXTargetDependency */,
+				1C3438A69E30684FBAECB5724E2F0DB7 /* PBXTargetDependency */,
+				D356892CC35711FF75C24B4FD5DFDF35 /* PBXTargetDependency */,
+			);
+			name = FlybitsCoreConcierge;
+		};
+		4C4D9F8B2155D5545C78F919C0171277 /* FlybitsConcierge */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DE0697D39D3F3D3C6613C5AC5D0D9B9D /* Build configuration list for PBXAggregateTarget "FlybitsConcierge" */;
+			buildPhases = (
+				28DE09227298CA904BD39C00FC7A0BC3 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				56E70704908FCDA8FD9C0845D35B5616 /* PBXTargetDependency */,
+			);
+			name = FlybitsConcierge;
+		};
+		68DA499335AE8E813BC3A369A5272A0B /* FlybitsContextSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EE1B20AB1AF8DBE810897D3CAE3C9BEB /* Build configuration list for PBXAggregateTarget "FlybitsContextSDK" */;
+			buildPhases = (
+				212B683A8BBC0758553DC73D80FD01C1 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				68395F2EC37B8D355F36C92CD1E85221 /* PBXTargetDependency */,
+			);
+			name = FlybitsContextSDK;
+		};
+		B177315585E424FE01CD2C830A804392 /* FlybitsKernelSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B25E63C857643ED088BCB395579C6FC5 /* Build configuration list for PBXAggregateTarget "FlybitsKernelSDK" */;
+			buildPhases = (
+				D9C7C4C33EBE1756D317434A27C813D7 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				CFCE3A871310EBBD0C8DDF2829B17E31 /* PBXTargetDependency */,
+			);
+			name = FlybitsKernelSDK;
+		};
+		B817A4C462352297A30D09DB73F8CAB9 /* FlybitsPushSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 986202341399FF0524179FC9FF99D639 /* Build configuration list for PBXAggregateTarget "FlybitsPushSDK" */;
+			buildPhases = (
+				151D1D0947E5C2A2D937B797507ABB77 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				EEE4ECD0EFD61B2E65BCC11A8A19F3C1 /* PBXTargetDependency */,
+			);
+			name = FlybitsPushSDK;
+		};
+		DB6E2C47AA985715613545815BE4D579 /* FlybitsSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A6F7B632F109FC40D9198CA9F09B772C /* Build configuration list for PBXAggregateTarget "FlybitsSDK" */;
+			buildPhases = (
+				F2412844AAB04A39884E3EB1F98836B7 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = FlybitsSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		40B2A486E1A10BB62D9BA350B08D1490 /* Pods-CatFacts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2E3FBE9F0CD78FBA9E9C98A1CA0A57 /* Pods-CatFacts-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C4A2DC33A689717CF4F2CE5AC2CEB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68DA499335AE8E813BC3A369A5272A0B;
+			remoteInfo = FlybitsContextSDK;
+		};
+		32CDEADDA2E576CA5F93BCF4C0A79CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C6835E8D198ACC525AE990A9D64304;
+			remoteInfo = FlybitsCoreConcierge;
+		};
+		40E25A93EDF82B3C2DD106AB797E9A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E2C47AA985715613545815BE4D579;
+			remoteInfo = FlybitsSDK;
+		};
+		4FEDDF1796FB9C8D2BB2CB3F7107F49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E2C47AA985715613545815BE4D579;
+			remoteInfo = FlybitsSDK;
+		};
+		54CA569EE0915590A5659B4F6072B3CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E2C47AA985715613545815BE4D579;
+			remoteInfo = FlybitsSDK;
+		};
+		5E647C8C840ACCC3F61FE5FA171E219D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C4D9F8B2155D5545C78F919C0171277;
+			remoteInfo = FlybitsConcierge;
+		};
+		742645AB8A6E0B53AD94922FC33A4830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68DA499335AE8E813BC3A369A5272A0B;
+			remoteInfo = FlybitsContextSDK;
+		};
+		7B9FCADB011C5F4E6400E912B320284F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C6835E8D198ACC525AE990A9D64304;
+			remoteInfo = FlybitsCoreConcierge;
+		};
+		83709427756AB2C95E782FAA67EA3815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E2C47AA985715613545815BE4D579;
+			remoteInfo = FlybitsSDK;
+		};
+		AC6AF5488FAE42A56B05E664F78A9335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E2C47AA985715613545815BE4D579;
+			remoteInfo = FlybitsSDK;
+		};
+		B3264FEFF0E8DC661F9F751BD554CD16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B817A4C462352297A30D09DB73F8CAB9;
+			remoteInfo = FlybitsPushSDK;
+		};
+		C653AC7F5895FF8D00540B1D6F9C7135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B817A4C462352297A30D09DB73F8CAB9;
+			remoteInfo = FlybitsPushSDK;
+		};
+		D4292166E231EC17D95F81E57E33C760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B177315585E424FE01CD2C830A804392;
+			remoteInfo = FlybitsKernelSDK;
+		};
+		EE26BD3672DF13808391FD5AA4E31DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B177315585E424FE01CD2C830A804392;
+			remoteInfo = FlybitsKernelSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C51CEAAB7BCDCA15BCC6F4298337E29 /* FlybitsConcierge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsConcierge.debug.xcconfig; sourceTree = "<group>"; };
+		1E9B765ED6D8385CDFE60B9C4472C854 /* FlybitsPushSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsPushSDK.debug.xcconfig; sourceTree = "<group>"; };
+		2D16B3C6BA8AE28939EA365DF60F8813 /* FlybitsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsSDK.debug.xcconfig; sourceTree = "<group>"; };
+		3DABBAA47608396D90CE60672565D1D8 /* FlybitsCoreConcierge.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FlybitsCoreConcierge.xcframework; sourceTree = "<group>"; };
+		3E8866AB79E752D98477D38E27A17946 /* Pods-CatFacts */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-CatFacts"; path = "libPods-CatFacts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		445BA04367DB10F9A31B09F08D6BB109 /* FlybitsCoreConcierge-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FlybitsCoreConcierge-xcframeworks.sh"; sourceTree = "<group>"; };
+		495B6A6479BE3E0102C5509B409AA044 /* FlybitsContextSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FlybitsContextSDK.xcframework; sourceTree = "<group>"; };
+		4A9A22946159F0BC9664E816703D0EC2 /* FlybitsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsSDK.release.xcconfig; sourceTree = "<group>"; };
+		4E0400A17C54AE785FF8EF56CBB46435 /* FlybitsKernelSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FlybitsKernelSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		4F2511BFCD84B8A7A65DD2D5D7D3E95E /* FlybitsContextSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FlybitsContextSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		55A462601489D715345794D13E4D4F3C /* Pods-CatFacts-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CatFacts-frameworks.sh"; sourceTree = "<group>"; };
+		5607A152DF8A3A75AB8EC3AEBBAE9312 /* FlybitsConcierge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsConcierge.release.xcconfig; sourceTree = "<group>"; };
+		57BD7EEDF5682B2FE5EA41293BBA7A18 /* FlybitsKernelSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsKernelSDK.debug.xcconfig; sourceTree = "<group>"; };
+		5A6F5C2EF63E58814D885403094339FC /* FlybitsContextSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsContextSDK.release.xcconfig; sourceTree = "<group>"; };
+		5C2E3FBE9F0CD78FBA9E9C98A1CA0A57 /* Pods-CatFacts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CatFacts-dummy.m"; sourceTree = "<group>"; };
+		68F5A629FFD67039B15006321EBCE312 /* FlybitsPushSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FlybitsPushSDK.xcframework; sourceTree = "<group>"; };
+		6DE4850E159528590C5B6364C9B86372 /* FlybitsContextSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsContextSDK.debug.xcconfig; sourceTree = "<group>"; };
+		6E089913F4E08C7026CD24AD611FE5CB /* Pods-CatFacts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CatFacts-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F39C6D2797476722099E0144F963864 /* Pods-CatFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CatFacts.debug.xcconfig"; sourceTree = "<group>"; };
+		77D5718D754589660091C0CA098F4A71 /* Pods-CatFacts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CatFacts-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F11533A2EF96712D2AF0EE2E1B7C74D /* Pods-CatFacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CatFacts.release.xcconfig"; sourceTree = "<group>"; };
+		A0EB8FA5588434813CF3D88B7B8D888A /* FlybitsPushSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FlybitsPushSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		A3FB39F7A423F5DA0D1CB20B1C2C2F19 /* FlybitsPushSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsPushSDK.release.xcconfig; sourceTree = "<group>"; };
+		A50FE5153AFFBB432A90A811F64A8FCC /* FlybitsKernelSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsKernelSDK.release.xcconfig; sourceTree = "<group>"; };
+		A73CF0C114F6A5F5CF3F9307C96DFD90 /* FlybitsCoreConcierge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsCoreConcierge.release.xcconfig; sourceTree = "<group>"; };
+		AA5A1F5326A5B1B44C988C5A601EC2D5 /* FlybitsSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FlybitsSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		B56DB71D90701D387384303230388B31 /* FlybitsConcierge-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FlybitsConcierge-xcframeworks.sh"; sourceTree = "<group>"; };
+		D215D75575A482ED070A45A267C2EA7F /* FlybitsSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FlybitsSDK.xcframework; sourceTree = "<group>"; };
+		DCA9F7B22F6B8E89FF2A6698C7DC52C7 /* FlybitsConcierge.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FlybitsConcierge.xcframework; sourceTree = "<group>"; };
+		E10BDFF5DACD2C5ECDDA29ED748FDAC5 /* FlybitsCoreConcierge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlybitsCoreConcierge.debug.xcconfig; sourceTree = "<group>"; };
+		EC7FC95970C83EFB956123503D379FD7 /* FlybitsKernelSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FlybitsKernelSDK.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56023792237415275D7E127F4A9D8F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17BAE63CA0692FC7447517371D4B81AD /* FlybitsKernelSDK */ = {
+			isa = PBXGroup;
+			children = (
+				443EBD248849692AA97F9925355FC085 /* Frameworks */,
+				FB677C4CDC55979039461B17906C9B22 /* Support Files */,
+			);
+			name = FlybitsKernelSDK;
+			path = FlybitsKernelSDK;
+			sourceTree = "<group>";
+		};
+		2F545AF3B6B64AB2C92EE42597B63A4A /* FlybitsCoreConcierge */ = {
+			isa = PBXGroup;
+			children = (
+				C9BA920E5D79591991D76C0D6B458016 /* Frameworks */,
+				96FA05FDC687FF58110036A3314866B5 /* Support Files */,
+			);
+			name = FlybitsCoreConcierge;
+			path = FlybitsCoreConcierge;
+			sourceTree = "<group>";
+		};
+		33764F250D816D6FA9F9551C791651F1 /* FlybitsConcierge */ = {
+			isa = PBXGroup;
+			children = (
+				CFD35A152BE582BCF0B16E532DF9BC0A /* Frameworks */,
+				7806CE6CB9214B2ABAC033D7D413C46B /* Support Files */,
+			);
+			name = FlybitsConcierge;
+			path = FlybitsConcierge;
+			sourceTree = "<group>";
+		};
+		443EBD248849692AA97F9925355FC085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC7FC95970C83EFB956123503D379FD7 /* FlybitsKernelSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C945FA1F1E005A3D55D633BD8832DC9 /* FlybitsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6D909F0B3E99802EC10FEABEFD91A33A /* Frameworks */,
+				D887C10500F5DC9E54A7C1FF93EA15A1 /* Support Files */,
+			);
+			name = FlybitsSDK;
+			path = FlybitsSDK;
+			sourceTree = "<group>";
+		};
+		4CB507E7E3890501D8B1303D53474011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495B6A6479BE3E0102C5509B409AA044 /* FlybitsContextSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F6C71F23BBB9679DBB966A22D5F3897 /* Pods-CatFacts */ = {
+			isa = PBXGroup;
+			children = (
+				77D5718D754589660091C0CA098F4A71 /* Pods-CatFacts-acknowledgements.markdown */,
+				6E089913F4E08C7026CD24AD611FE5CB /* Pods-CatFacts-acknowledgements.plist */,
+				5C2E3FBE9F0CD78FBA9E9C98A1CA0A57 /* Pods-CatFacts-dummy.m */,
+				55A462601489D715345794D13E4D4F3C /* Pods-CatFacts-frameworks.sh */,
+				6F39C6D2797476722099E0144F963864 /* Pods-CatFacts.debug.xcconfig */,
+				9F11533A2EF96712D2AF0EE2E1B7C74D /* Pods-CatFacts.release.xcconfig */,
+			);
+			name = "Pods-CatFacts";
+			path = "Target Support Files/Pods-CatFacts";
+			sourceTree = "<group>";
+		};
+		6D909F0B3E99802EC10FEABEFD91A33A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D215D75575A482ED070A45A267C2EA7F /* FlybitsSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7806CE6CB9214B2ABAC033D7D413C46B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B56DB71D90701D387384303230388B31 /* FlybitsConcierge-xcframeworks.sh */,
+				0C51CEAAB7BCDCA15BCC6F4298337E29 /* FlybitsConcierge.debug.xcconfig */,
+				5607A152DF8A3A75AB8EC3AEBBAE9312 /* FlybitsConcierge.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlybitsConcierge";
+			sourceTree = "<group>";
+		};
+		83F0D80461438DE0FAF308985C46EF5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68F5A629FFD67039B15006321EBCE312 /* FlybitsPushSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9158476A622C4446656B548FF2271E3E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F2511BFCD84B8A7A65DD2D5D7D3E95E /* FlybitsContextSDK-xcframeworks.sh */,
+				6DE4850E159528590C5B6364C9B86372 /* FlybitsContextSDK.debug.xcconfig */,
+				5A6F5C2EF63E58814D885403094339FC /* FlybitsContextSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlybitsContextSDK";
+			sourceTree = "<group>";
+		};
+		96FA05FDC687FF58110036A3314866B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				445BA04367DB10F9A31B09F08D6BB109 /* FlybitsCoreConcierge-xcframeworks.sh */,
+				E10BDFF5DACD2C5ECDDA29ED748FDAC5 /* FlybitsCoreConcierge.debug.xcconfig */,
+				A73CF0C114F6A5F5CF3F9307C96DFD90 /* FlybitsCoreConcierge.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlybitsCoreConcierge";
+			sourceTree = "<group>";
+		};
+		BE0DC490D7969789FED98C7F5DF485A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E8866AB79E752D98477D38E27A17946 /* Pods-CatFacts */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C09244D1D15F1AF74528B6B4BEBFD572 /* FlybitsPushSDK */ = {
+			isa = PBXGroup;
+			children = (
+				83F0D80461438DE0FAF308985C46EF5C /* Frameworks */,
+				C83641113C65542D9B0A7D3964A068E6 /* Support Files */,
+			);
+			name = FlybitsPushSDK;
+			path = FlybitsPushSDK;
+			sourceTree = "<group>";
+		};
+		C83641113C65542D9B0A7D3964A068E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0EB8FA5588434813CF3D88B7B8D888A /* FlybitsPushSDK-xcframeworks.sh */,
+				1E9B765ED6D8385CDFE60B9C4472C854 /* FlybitsPushSDK.debug.xcconfig */,
+				A3FB39F7A423F5DA0D1CB20B1C2C2F19 /* FlybitsPushSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlybitsPushSDK";
+			sourceTree = "<group>";
+		};
+		C9BA920E5D79591991D76C0D6B458016 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DABBAA47608396D90CE60672565D1D8 /* FlybitsCoreConcierge.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9DA4CD5BE404A873A177922E1248E72 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F6C71F23BBB9679DBB966A22D5F3897 /* Pods-CatFacts */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				DD6E2FCDE611AA592E9FD2E9FDB5F522 /* Pods */,
+				BE0DC490D7969789FED98C7F5DF485A7 /* Products */,
+				C9DA4CD5BE404A873A177922E1248E72 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD35A152BE582BCF0B16E532DF9BC0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9F7B22F6B8E89FF2A6698C7DC52C7 /* FlybitsConcierge.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D887C10500F5DC9E54A7C1FF93EA15A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA5A1F5326A5B1B44C988C5A601EC2D5 /* FlybitsSDK-xcframeworks.sh */,
+				2D16B3C6BA8AE28939EA365DF60F8813 /* FlybitsSDK.debug.xcconfig */,
+				4A9A22946159F0BC9664E816703D0EC2 /* FlybitsSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlybitsSDK";
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD6E2FCDE611AA592E9FD2E9FDB5F522 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33764F250D816D6FA9F9551C791651F1 /* FlybitsConcierge */,
+				F99157910540F26AB50DDEBA44C29213 /* FlybitsContextSDK */,
+				2F545AF3B6B64AB2C92EE42597B63A4A /* FlybitsCoreConcierge */,
+				17BAE63CA0692FC7447517371D4B81AD /* FlybitsKernelSDK */,
+				C09244D1D15F1AF74528B6B4BEBFD572 /* FlybitsPushSDK */,
+				4C945FA1F1E005A3D55D633BD8832DC9 /* FlybitsSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F99157910540F26AB50DDEBA44C29213 /* FlybitsContextSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4CB507E7E3890501D8B1303D53474011 /* Frameworks */,
+				9158476A622C4446656B548FF2271E3E /* Support Files */,
+			);
+			name = FlybitsContextSDK;
+			path = FlybitsContextSDK;
+			sourceTree = "<group>";
+		};
+		FB677C4CDC55979039461B17906C9B22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E0400A17C54AE785FF8EF56CBB46435 /* FlybitsKernelSDK-xcframeworks.sh */,
+				57BD7EEDF5682B2FE5EA41293BBA7A18 /* FlybitsKernelSDK.debug.xcconfig */,
+				A50FE5153AFFBB432A90A811F64A8FCC /* FlybitsKernelSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlybitsKernelSDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F8C6DEA4AAD402FD911D770AC0C4DC2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F6C4793537904F34C671D378B34EC71 /* Pods-CatFacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AB2D6C3FB6571925C46D66866A027E /* Build configuration list for PBXNativeTarget "Pods-CatFacts" */;
+			buildPhases = (
+				F8C6DEA4AAD402FD911D770AC0C4DC2B /* Headers */,
+				F8F86F5E1DC535EA247EDFC44F64CDCD /* Sources */,
+				56023792237415275D7E127F4A9D8F06 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74191863CA9294679AD0A7B07E277F1E /* PBXTargetDependency */,
+				0B7723E783BED10308F40B5E6CFD91A4 /* PBXTargetDependency */,
+				C4E8912CA29110D8E7EF029891F0635F /* PBXTargetDependency */,
+				59BFE2220B83B538A5B4AFEA3AE3DD10 /* PBXTargetDependency */,
+				81C0A13D9958A6CCD95457E9955F4693 /* PBXTargetDependency */,
+				5936FDDB81C2DA243684876DE61D0A6F /* PBXTargetDependency */,
+			);
+			name = "Pods-CatFacts";
+			productName = "Pods-CatFacts";
+			productReference = 3E8866AB79E752D98477D38E27A17946 /* Pods-CatFacts */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BE0DC490D7969789FED98C7F5DF485A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C4D9F8B2155D5545C78F919C0171277 /* FlybitsConcierge */,
+				68DA499335AE8E813BC3A369A5272A0B /* FlybitsContextSDK */,
+				12C6835E8D198ACC525AE990A9D64304 /* FlybitsCoreConcierge */,
+				B177315585E424FE01CD2C830A804392 /* FlybitsKernelSDK */,
+				B817A4C462352297A30D09DB73F8CAB9 /* FlybitsPushSDK */,
+				DB6E2C47AA985715613545815BE4D579 /* FlybitsSDK */,
+				0F6C4793537904F34C671D378B34EC71 /* Pods-CatFacts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		151D1D0947E5C2A2D937B797507ABB77 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsPushSDK/FlybitsPushSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsPushSDK/FlybitsPushSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FlybitsPushSDK/FlybitsPushSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		212B683A8BBC0758553DC73D80FD01C1 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsContextSDK/FlybitsContextSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsContextSDK/FlybitsContextSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FlybitsContextSDK/FlybitsContextSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28DE09227298CA904BD39C00FC7A0BC3 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsConcierge/FlybitsConcierge-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsConcierge/FlybitsConcierge-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FlybitsConcierge/FlybitsConcierge-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E48BF47840BFC637672F10D3425C135 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsCoreConcierge/FlybitsCoreConcierge-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsCoreConcierge/FlybitsCoreConcierge-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FlybitsCoreConcierge/FlybitsCoreConcierge-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C7C4C33EBE1756D317434A27C813D7 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsKernelSDK/FlybitsKernelSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsKernelSDK/FlybitsKernelSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FlybitsKernelSDK/FlybitsKernelSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2412844AAB04A39884E3EB1F98836B7 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsSDK/FlybitsSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FlybitsSDK/FlybitsSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FlybitsSDK/FlybitsSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8F86F5E1DC535EA247EDFC44F64CDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B2A486E1A10BB62D9BA350B08D1490 /* Pods-CatFacts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B7723E783BED10308F40B5E6CFD91A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsContextSDK;
+			target = 68DA499335AE8E813BC3A369A5272A0B /* FlybitsContextSDK */;
+			targetProxy = 742645AB8A6E0B53AD94922FC33A4830 /* PBXContainerItemProxy */;
+		};
+		1A8674B7390EFFA66469BE77F12D4310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsKernelSDK;
+			target = B177315585E424FE01CD2C830A804392 /* FlybitsKernelSDK */;
+			targetProxy = D4292166E231EC17D95F81E57E33C760 /* PBXContainerItemProxy */;
+		};
+		1C3438A69E30684FBAECB5724E2F0DB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsPushSDK;
+			target = B817A4C462352297A30D09DB73F8CAB9 /* FlybitsPushSDK */;
+			targetProxy = C653AC7F5895FF8D00540B1D6F9C7135 /* PBXContainerItemProxy */;
+		};
+		56E70704908FCDA8FD9C0845D35B5616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsCoreConcierge;
+			target = 12C6835E8D198ACC525AE990A9D64304 /* FlybitsCoreConcierge */;
+			targetProxy = 7B9FCADB011C5F4E6400E912B320284F /* PBXContainerItemProxy */;
+		};
+		5936FDDB81C2DA243684876DE61D0A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsSDK;
+			target = DB6E2C47AA985715613545815BE4D579 /* FlybitsSDK */;
+			targetProxy = 4FEDDF1796FB9C8D2BB2CB3F7107F49C /* PBXContainerItemProxy */;
+		};
+		59BFE2220B83B538A5B4AFEA3AE3DD10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsKernelSDK;
+			target = B177315585E424FE01CD2C830A804392 /* FlybitsKernelSDK */;
+			targetProxy = EE26BD3672DF13808391FD5AA4E31DDB /* PBXContainerItemProxy */;
+		};
+		68395F2EC37B8D355F36C92CD1E85221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsSDK;
+			target = DB6E2C47AA985715613545815BE4D579 /* FlybitsSDK */;
+			targetProxy = 54CA569EE0915590A5659B4F6072B3CB /* PBXContainerItemProxy */;
+		};
+		74191863CA9294679AD0A7B07E277F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsConcierge;
+			target = 4C4D9F8B2155D5545C78F919C0171277 /* FlybitsConcierge */;
+			targetProxy = 5E647C8C840ACCC3F61FE5FA171E219D /* PBXContainerItemProxy */;
+		};
+		81C0A13D9958A6CCD95457E9955F4693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsPushSDK;
+			target = B817A4C462352297A30D09DB73F8CAB9 /* FlybitsPushSDK */;
+			targetProxy = B3264FEFF0E8DC661F9F751BD554CD16 /* PBXContainerItemProxy */;
+		};
+		A28E3429D79EC30EC4E3CD0F46F3704A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsContextSDK;
+			target = 68DA499335AE8E813BC3A369A5272A0B /* FlybitsContextSDK */;
+			targetProxy = 1C4A2DC33A689717CF4F2CE5AC2CEB7F /* PBXContainerItemProxy */;
+		};
+		C4E8912CA29110D8E7EF029891F0635F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsCoreConcierge;
+			target = 12C6835E8D198ACC525AE990A9D64304 /* FlybitsCoreConcierge */;
+			targetProxy = 32CDEADDA2E576CA5F93BCF4C0A79CC0 /* PBXContainerItemProxy */;
+		};
+		CFCE3A871310EBBD0C8DDF2829B17E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsSDK;
+			target = DB6E2C47AA985715613545815BE4D579 /* FlybitsSDK */;
+			targetProxy = AC6AF5488FAE42A56B05E664F78A9335 /* PBXContainerItemProxy */;
+		};
+		D356892CC35711FF75C24B4FD5DFDF35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsSDK;
+			target = DB6E2C47AA985715613545815BE4D579 /* FlybitsSDK */;
+			targetProxy = 83709427756AB2C95E782FAA67EA3815 /* PBXContainerItemProxy */;
+		};
+		EEE4ECD0EFD61B2E65BCC11A8A19F3C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlybitsSDK;
+			target = DB6E2C47AA985715613545815BE4D579 /* FlybitsSDK */;
+			targetProxy = 40E25A93EDF82B3C2DD106AB797E9A7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13EAE3F0381365FAA5DD2B64B627B2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E9B765ED6D8385CDFE60B9C4472C854 /* FlybitsPushSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36806762D484BE51D1E95212CF6911DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E10BDFF5DACD2C5ECDDA29ED748FDAC5 /* FlybitsCoreConcierge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		413872442EEBB5931A823CD3638E4848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DE4850E159528590C5B6364C9B86372 /* FlybitsContextSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		653B38CFFF2BDFE29AFC4A045E929801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D16B3C6BA8AE28939EA365DF60F8813 /* FlybitsSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6993A3860767CBE77B19FF621EE57347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57BD7EEDF5682B2FE5EA41293BBA7A18 /* FlybitsKernelSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B56CDA676087E977E8329904648F0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F11533A2EF96712D2AF0EE2E1B7C74D /* Pods-CatFacts.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9648881B3AB57BD996D5A0D8C3231FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FB39F7A423F5DA0D1CB20B1C2C2F19 /* FlybitsPushSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A08DB22C5A966DA3893F2EB19E6CE7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5607A152DF8A3A75AB8EC3AEBBAE9312 /* FlybitsConcierge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADB8DFA94BAC41D227BF2C23D5B26911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73CF0C114F6A5F5CF3F9307C96DFD90 /* FlybitsCoreConcierge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D62248637C187BA93CA32E57BC8CBB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6F5C2EF63E58814D885403094339FC /* FlybitsContextSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1AF8CBE210520C3E90FD2CE0DBC9E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50FE5153AFFBB432A90A811F64A8FCC /* FlybitsKernelSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E489D9B3C9972C1097D6753A2FA3FC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F39C6D2797476722099E0144F963864 /* Pods-CatFacts.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F14E2B47ADE2373229E92C4E8ED3549F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C51CEAAB7BCDCA15BCC6F4298337E29 /* FlybitsConcierge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F45B5662F16AC528FC4654875D6CCC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9A22946159F0BC9664E816703D0EC2 /* FlybitsSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986202341399FF0524179FC9FF99D639 /* Build configuration list for PBXAggregateTarget "FlybitsPushSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13EAE3F0381365FAA5DD2B64B627B2B7 /* Debug */,
+				9648881B3AB57BD996D5A0D8C3231FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F7B632F109FC40D9198CA9F09B772C /* Build configuration list for PBXAggregateTarget "FlybitsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653B38CFFF2BDFE29AFC4A045E929801 /* Debug */,
+				F45B5662F16AC528FC4654875D6CCC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25E63C857643ED088BCB395579C6FC5 /* Build configuration list for PBXAggregateTarget "FlybitsKernelSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6993A3860767CBE77B19FF621EE57347 /* Debug */,
+				E1AF8CBE210520C3E90FD2CE0DBC9E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6AB2D6C3FB6571925C46D66866A027E /* Build configuration list for PBXNativeTarget "Pods-CatFacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E489D9B3C9972C1097D6753A2FA3FC49 /* Debug */,
+				6B56CDA676087E977E8329904648F0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE0697D39D3F3D3C6613C5AC5D0D9B9D /* Build configuration list for PBXAggregateTarget "FlybitsConcierge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F14E2B47ADE2373229E92C4E8ED3549F /* Debug */,
+				A08DB22C5A966DA3893F2EB19E6CE7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E32DCC02BD22E9F2995AE28BA1C56D92 /* Build configuration list for PBXAggregateTarget "FlybitsCoreConcierge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36806762D484BE51D1E95212CF6911DE /* Debug */,
+				ADB8DFA94BAC41D227BF2C23D5B26911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE1B20AB1AF8DBE810897D3CAE3C9BEB /* Build configuration list for PBXAggregateTarget "FlybitsContextSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413872442EEBB5931A823CD3638E4848 /* Debug */,
+				D62248637C187BA93CA32E57BC8CBB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
