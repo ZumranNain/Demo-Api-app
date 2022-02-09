@@ -13,30 +13,42 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var fetchedCat = [CatFacts]()
     let tableView = UITableView()
     
+   // var logOut = UIButton()
+    
     var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
+    
+    @objc private func logOutAction() {
+      
+        Concierge.disconnect(){ boolean in
+           // print("DISCONNCETING")
+        }
+
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let idp = AnonymousConciergeIDP()
-         
-         Concierge.connect(with: idp)  { error in
-             if error == nil{
-                 print("Login successful")
-             }//Flybits failed to auth
-             else{
-                 print(error as Any)
-             }
-             }
-         
-         let concierge = Concierge.viewController(.none, params: [], options: [.displayNavigation])
-         
-         self.present(concierge, animated: true)
+        
+        let logOut = UIButton(frame: CGRect(x: 150, y: 400, width: 100, height: 50))
+        logOut.backgroundColor = .gray
+        
+        logOut.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+       // logOut.translatesAutoresizingMaskIntoConstraints = false
+        logOut.setTitle("Disconnect", for: .normal)
+        logOut.setTitleColor(.white, for: .normal)
+        logOut.layer.cornerRadius = 3
+        logOut.addTarget(self, action: #selector(logOutAction), for: .touchUpInside)
+        self.view.addSubview(logOut)
+        
          
         tableView .register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
+        view.addSubview(logOut)
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -83,7 +95,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 
                     for catFact in catFacts {
                         
-                      
                         self.fetchedCat.append(catFact)
                         self.tableView.reloadData()
 
