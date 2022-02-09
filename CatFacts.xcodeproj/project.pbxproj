@@ -18,6 +18,7 @@
 		A3D6AD9B27A9AC38000FBEF4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6AD9A27A9AC38000FBEF4 /* CollectionViewController.swift */; };
 		A3D6ADBF27AAED02000FBEF4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6ADBE27AAED02000FBEF4 /* FirstViewController.swift */; };
 		A3D9DA4A279B999100636EAC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9DA49279B999100636EAC /* SecondViewController.swift */; };
+		A3E3475C27B2DF030057E6FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E3475B27B2DF030057E6FB /* LoginViewController.swift */; };
 		A3E51CB327B1C66A00D89DC7 /* ConciergeConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A3E51CB227B1C66A00D89DC7 /* ConciergeConfiguration.json */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		A3D6AD9A27A9AC38000FBEF4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A3D6ADBE27AAED02000FBEF4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = CatFacts/FirstViewController.swift; sourceTree = "<group>"; };
 		A3D9DA49279B999100636EAC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A3E3475B27B2DF030057E6FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A3E51CB227B1C66A00D89DC7 /* ConciergeConfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ConciergeConfiguration.json; sourceTree = "<group>"; };
 		F53D67C3953B679E4B80797C /* Pods-CatFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFacts.debug.xcconfig"; path = "Target Support Files/Pods-CatFacts/Pods-CatFacts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 			children = (
 				A331945B2798A65900D88059 /* AppDelegate.swift */,
 				A331945D2798A65900D88059 /* SceneDelegate.swift */,
+				A3E3475B27B2DF030057E6FB /* LoginViewController.swift */,
 				A331945F2798A65900D88059 /* ViewController.swift */,
 				A3D9DA49279B999100636EAC /* SecondViewController.swift */,
 				A3D6AD9827A873DD000FBEF4 /* CatFactCell.swift */,
@@ -226,6 +229,7 @@
 				A3D9DA4A279B999100636EAC /* SecondViewController.swift in Sources */,
 				A3D6AD9927A873DD000FBEF4 /* CatFactCell.swift in Sources */,
 				A33194602798A65900D88059 /* ViewController.swift in Sources */,
+				A3E3475C27B2DF030057E6FB /* LoginViewController.swift in Sources */,
 				A331945C2798A65900D88059 /* AppDelegate.swift in Sources */,
 				A331945E2798A65900D88059 /* SceneDelegate.swift in Sources */,
 				A3D6ADBF27AAED02000FBEF4 /* FirstViewController.swift in Sources */,

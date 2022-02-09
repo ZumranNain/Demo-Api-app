@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FlybitsConcierge
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -26,16 +27,45 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         finalLayout.itemSize = CGSize(width: 40 , height: 50)
         
     //    let navVC = UINavigationController(rootViewController: ViewController(collectionViewLayout: finalLayout))
-        let navVCTable = UINavigationController(rootViewController: FirstViewController())
-        let collectionTable = ViewController(collectionViewLayout: finalLayout)
-        collectionTable.title = "Collection View"
-        let navVcCollection = UINavigationController(rootViewController: collectionTable)
+     //   let navVCTable = UINavigationController(rootViewController: FirstViewController())
+    //    let collectionTable = ViewController(collectionViewLayout: finalLayout)
+      //  collectionTable.title = "Collection View"
+     //   let navVcCollection = UINavigationController(rootViewController: collectionTable)
                 
         
-        let tabBarVC = UITabBarController()
-        tabBarVC.setViewControllers([navVCTable, navVcCollection], animated: true)
+     //   let tabBarVC = UITabBarController()
         
-        window?.rootViewController = tabBarVC
+        
+        //   let idp = AnonymousConciergeIDP()
+     //     let idp =  APIKeyConciergeIDP.init(email: "zumran.nain@flybits.com", apiKey: "AE52CAAB-F031-4F42-AB91-8358F0695551")
+           
+  //         print("This is the idp ", idp)
+           
+      //     var login = idp.toFlybitsIDP()
+           
+           
+            
+//           Concierge.connect(with: idp)  { error in
+//                if error == nil{
+//                    print("Login successful")
+//                }//Flybits failed to auth
+//                else{
+//                    print(error as Any)
+//                }
+//                }
+         
+            
+       //    let concierge = Concierge.viewController(.none, params: [], options: [.displayNavigation])
+          //  self.present(concierge, animated: true)
+        
+      //  concierge.title = "Concierge"
+      //  tabBarVC.setViewControllers([navVCTable, navVcCollection, concierge], animated: true)
+        
+        let loginVC = LoginViewController()
+        
+        
+        window?.rootViewController = loginVC
+  
         window?.makeKeyAndVisible()
         
     }
