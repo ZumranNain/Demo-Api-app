@@ -35,20 +35,23 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         
         let logOut = UIButton(frame: CGRect(x: 150, y: 400, width: 100, height: 50))
-        logOut.backgroundColor = .gray
         
-        logOut.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-       // logOut.translatesAutoresizingMaskIntoConstraints = false
+        logOut.addTarget(self, action: #selector(logOutAction), for: .touchUpInside)
         logOut.setTitle("Disconnect", for: .normal)
         logOut.setTitleColor(.white, for: .normal)
+        logOut.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        
         logOut.layer.cornerRadius = 3
-        logOut.addTarget(self, action: #selector(logOutAction), for: .touchUpInside)
-        self.view.addSubview(logOut)
+        logOut.backgroundColor = .gray
+
+     //   self.view.addSubview(logOut)
         
          
         tableView .register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.addSubview(logOut)
         view.addSubview(tableView)
-        view.addSubview(logOut)
+        
+   //     view.addSubview(logOut)
         tableView.delegate = self
         tableView.dataSource = self
         
