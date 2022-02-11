@@ -10,7 +10,6 @@ import SwiftUI
 import FlybitsConcierge
 
 
-
 class LoginViewController: UIViewController {
     
     let topView: UIView = {

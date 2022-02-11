@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Concierge.configure(configuration: nil, contextPlugins: [])
-    
+        w
         return true
     }
 
