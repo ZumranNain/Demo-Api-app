@@ -9,6 +9,8 @@ import UIKit
 import SwiftUI
 import FlybitsConcierge
 
+
+
 class LoginViewController: UIViewController {
     
     let topView: UIView = {
@@ -87,7 +89,7 @@ class LoginViewController: UIViewController {
         
 
         Concierge.disconnect(){ boolean in
-           // print("DISCONNCETING")
+            print("DISCONNCETING")
             
         }
        
@@ -111,7 +113,8 @@ class LoginViewController: UIViewController {
                  let navVcCollection = UINavigationController(rootViewController: collectionTable)
                  
                  
-                 let concierge = Concierge.viewController(.none, params: [], options: [.displayNavigation])
+                 
+                 let concierge = Concierge.viewController(.categories, params: [], options: [.settings,.displayNavigation])
                  concierge.title = "Concierge"
                  
                  let tabBarVC = UITabBarController()
@@ -125,7 +128,9 @@ class LoginViewController: UIViewController {
              else{
                  print("LOGIN NOT SUCCESS FUL THIS IS THE ERROR", error as Any)
                  
-                 return
+                 return 
+                 
+                 
              }
              }
           }
