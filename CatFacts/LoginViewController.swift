@@ -4,7 +4,6 @@
 //
 //  Created by Zumran Nain on 2022-02-08.
 //
-
 import UIKit
 import SwiftUI
 import FlybitsConcierge
@@ -80,6 +79,7 @@ class LoginViewController: UIViewController {
         if(email == "" || apiKey == "") {
             return
         }
+      
         
        DoLogin(email: email, apiKey: apiKey)
     
@@ -87,17 +87,15 @@ class LoginViewController: UIViewController {
     
     func DoLogin(email: String?, apiKey: String?){
         
-
-        Concierge.disconnect(){ boolean in
-            print("DISCONNCETING")
-            
-        }
        
+        
           let idp = APIKeyConciergeIDP(email: email!, apiKey: apiKey!)
         
+       
           Concierge.connect(with: idp)  { error in
               
-              DispatchQueue.main.async {
+            
+              DispatchQueue.main.asyncAfter(deadline: .now() ){
              if error == nil{
                  print("Login successful")
                  let finalLayout = UICollectionViewFlowLayout()
@@ -128,8 +126,14 @@ class LoginViewController: UIViewController {
              else{
                  print("LOGIN NOT SUCCESS FUL THIS IS THE ERROR", error as Any)
                  
-                 return 
+                 if Concierge.isConnected{
+                 Concierge.disconnect(){ boolean in
+                 print("DISCONNCETING")
+                  
+              }
+                 }
                  
+                 return
                  
              }
              }

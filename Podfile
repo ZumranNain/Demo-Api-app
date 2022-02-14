@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+s# Uncomment the next line to define a global platform for your project
 
 
 source 'https://github.com/flybits/Spec-XCFramework.git'
