@@ -11,7 +11,7 @@ import FlybitsConcierge
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -26,78 +26,78 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         finalLayout.minimumInteritemSpacing = 1
         finalLayout.itemSize = CGSize(width: 40 , height: 50)
         
-    //    let navVC = UINavigationController(rootViewController: ViewController(collectionViewLayout: finalLayout))
-     //   let navVCTable = UINavigationController(rootViewController: FirstViewController())
-    //    let collectionTable = ViewController(collectionViewLayout: finalLayout)
-      //  collectionTable.title = "Collection View"
-     //   let navVcCollection = UINavigationController(rootViewController: collectionTable)
-                
+        //    let navVC = UINavigationController(rootViewController: ViewController(collectionViewLayout: finalLayout))
+        //   let navVCTable = UINavigationController(rootViewController: FirstViewController())
+        //    let collectionTable = ViewController(collectionViewLayout: finalLayout)
+        //  collectionTable.title = "Collection View"
+        //   let navVcCollection = UINavigationController(rootViewController: collectionTable)
         
-     //   let tabBarVC = UITabBarController()
+        
+        //   let tabBarVC = UITabBarController()
         
         
         //   let idp = AnonymousConciergeIDP()
-     //     let idp =  APIKeyConciergeIDP.init(email: "zumran.nain@flybits.com", apiKey: "AE52CAAB-F031-4F42-AB91-8358F0695551")
-           
-  //         print("This is the idp ", idp)
-           
-      //     var login = idp.toFlybitsIDP()
-           
-           
-            
-//           Concierge.connect(with: idp)  { error in
-//                if error == nil{
-//                    print("Login successful")
-//                }//Flybits failed to auth
-//                else{
-//                    print(error as Any)
-//                }
-//                }
-         
-            
-       //    let concierge = Concierge.viewController(.none, params: [], options: [.displayNavigation])
-          //  self.present(concierge, animated: true)
+        //     let idp =  APIKeyConciergeIDP.init(email: "zumran.nain@flybits.com", apiKey: "AE52CAAB-F031-4F42-AB91-8358F0695551")
         
-      //  concierge.title = "Concierge"
-      //  tabBarVC.setViewControllers([navVCTable, navVcCollection, concierge], animated: true)
+        //         print("This is the idp ", idp)
+        
+        //     var login = idp.toFlybitsIDP()
+        
+        
+        
+        //           Concierge.connect(with: idp)  { error in
+        //                if error == nil{
+        //                    print("Login successful")
+        //                }//Flybits failed to auth
+        //                else{
+        //                    print(error as Any)
+        //                }
+        //                }
+        
+        
+        //    let concierge = Concierge.viewController(.none, params: [], options: [.displayNavigation])
+        //  self.present(concierge, animated: true)
+        
+        //  concierge.title = "Concierge"
+        //  tabBarVC.setViewControllers([navVCTable, navVcCollection, concierge], animated: true)
         
         let loginVC = LoginViewController()
         
         
         window?.rootViewController = loginVC
-  
+        
         window?.makeKeyAndVisible()
         
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
-
+    
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }
-
+    
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
     }
-
+    
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
     }
-
+    
     func sceneDidEnterBackground(_ scene: UIScene) {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    
+    
 }
 

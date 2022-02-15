@@ -11,24 +11,24 @@ import UIKit
 
 //remmebr to add data cource and delegate for collection view
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
-   
-    
-     var fetchedCat = [CatFacts]()
     
     
-     var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
+    var fetchedCat = [CatFacts]()
     
-
+    
+    var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         let layout = UICollectionViewFlowLayout()
-
+        
         layout.scrollDirection = .vertical
         layout.minimumInteritemSpacing = 1
-
+        
         layout.sectionFootersPinToVisibleBounds = true
         layout.sectionHeadersPinToVisibleBounds = true
         
@@ -39,7 +39,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         self.collectionView.register(CatFactCell.self, forCellWithReuseIdentifier: CatFactCell.identifier)
         self.title = "Collection View"
         
-    
+        
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         self.collectionView!.refreshControl = refreshControl
@@ -51,10 +51,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             }
         }
         
-   //    parseData()
+        //    parseData()
     }
     
- 
+    
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return fetchedCat.count
@@ -65,7 +65,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         cell.idLabel.text = "Id: " + fetchedCat[indexPath.row]._id
         cell.idLabel.font = UIFont.systemFont(ofSize: 20)
-    
+        
         return cell
     }
     
@@ -85,21 +85,21 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         }
         flowLayout.invalidateLayout()
     }
-
+    
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-                      
-            let vc = SecondViewController()
-    
-            let navVC = UINavigationController(rootViewController: vc)
         
-      //      var cell = self.collectionView(collectionView, cellForItemAt: indexPath) as! CatFactCell
-      //      cell.idLabel.backgroundColor = .green
-    
-            navVC.modalPresentationStyle = .fullScreen
-            vc.eachFetchedCat = fetchedCat[indexPath.row]
+        let vc = SecondViewController()
         
-            navigationController?.pushViewController(vc, animated: true)
+        let navVC = UINavigationController(rootViewController: vc)
+        
+        //      var cell = self.collectionView(collectionView, cellForItemAt: indexPath) as! CatFactCell
+        //      cell.idLabel.backgroundColor = .green
+        
+        navVC.modalPresentationStyle = .fullScreen
+        vc.eachFetchedCat = fetchedCat[indexPath.row]
+        
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     
@@ -112,31 +112,31 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     @objc func refresh(_ sender: Any) {
         
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
-         //   self.parseData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+            //   self.parseData()
+            
+            self.fetchedCat = []
+            
+            self.fetchAndDecode.fetchCatData { (catFacts) in
                 
-                self.fetchedCat = []
-                
-                self.fetchAndDecode.fetchCatData { (catFacts) in
-
-                    for catFact in catFacts {
-                        
-                        self.fetchedCat.append(catFact)
-                        self.collectionView.reloadData()
-
-                    }
-
+                for catFact in catFacts {
+                    
+                    self.fetchedCat.append(catFact)
+                    self.collectionView.reloadData()
+                    
                 }
-
+                
+            }
+            
             self.collectionView .refreshControl?.endRefreshing()
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
-            super.viewWillAppear(animated)
-            collectionView.reloadData()
-        }
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -161,9 +161,9 @@ struct CatFacts: Decodable{
     let type: String
     let status: StatusLabel
     
-
+    
     init(_id: String, text: String, user: String, source: String, updatedAt: String,  createdAt: String, deleted: Bool, used: Bool, __v: Int, type:String, status:StatusLabel){
-      
+        
         self._id = _id
         self.text = text
         self.user = user
@@ -207,12 +207,12 @@ class FetchandDecodeOperation: Foundation.Operation {
         let task = session.dataTask(with: request) { (data, response, error) in
             
             if error != nil {
-                print("Error")
+                //  print("Error")
             }
             
             else {
                 
-              let catFactDecoder = JSONDecoder()
+                let catFactDecoder = JSONDecoder()
                 
                 do {
                     
@@ -221,15 +221,15 @@ class FetchandDecodeOperation: Foundation.Operation {
                     
                 }
                 catch let error {
-                    print(error)
-                  
+                    //   print(error)
+                    
                 }
             }
         }
         task.resume()
     }
 }
-    
+
 
 extension UIView {
     func pinEdges(to other: UIView) {

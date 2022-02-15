@@ -13,20 +13,20 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     var fetchedCat = [CatFacts]()
     let tableView = UITableView()
     
-   // var logOut = UIButton()
+    // var logOut = UIButton()
     
     var fetchAndDecode: FetchandDecodeOperation = FetchandDecodeOperation()
     
     @objc private func logOutAction() {
-      
+        
         Concierge.disconnect(){ boolean in
-           // print("DISCONNCETING")
+            
         }
-
+        
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    
     
     override func viewDidLoad() {
         
@@ -43,15 +43,15 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         logOut.layer.cornerRadius = 3
         logOut.backgroundColor = .gray
-
-     //   self.view.addSubview(logOut)
         
-         
+        //   self.view.addSubview(logOut)
+        
+        
         tableView .register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.addSubview(logOut)
         view.addSubview(tableView)
         
-   //     view.addSubview(logOut)
+        //     view.addSubview(logOut)
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -60,23 +60,23 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.title = "Table View"
         
         self.view.backgroundColor = UIColor.white
-    
+        
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         self.tableView .refreshControl = refreshControl
         
-       
-
+        
+        
         fetchAndDecode.fetchCatData { (catFacts) in
-
+            
             for catFact in catFacts {
                 self.fetchedCat.append(catFact)
                 self.tableView.reloadData()
-
+                
             }
-
+            
         }
-   //    parseData()
+        //    parseData()
         
     }
     
@@ -89,47 +89,47 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @objc func refresh(_ sender: Any) {
         
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
-         //   self.parseData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+            //   self.parseData()
+            
+            self.fetchedCat = []
+            
+            self.fetchAndDecode.fetchCatData { (catFacts) in
                 
-                self.fetchedCat = []
-                
-                self.fetchAndDecode.fetchCatData { (catFacts) in
-
-                    for catFact in catFacts {
-                        
-                        self.fetchedCat.append(catFact)
-                        self.tableView.reloadData()
-
-                    }
-
+                for catFact in catFacts {
+                    
+                    self.fetchedCat.append(catFact)
+                    self.tableView.reloadData()
+                    
                 }
-
+                
+            }
+            
             self.tableView .refreshControl?.endRefreshing()
         }
     }
     
     
-   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-          
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let vc = SecondViewController()
         let navVC = UINavigationController(rootViewController: vc)
         
-         navVC.modalPresentationStyle = .fullScreen
-         vc.eachFetchedCat = fetchedCat[indexPath.row]
+        navVC.modalPresentationStyle = .fullScreen
+        vc.eachFetchedCat = fetchedCat[indexPath.row]
         
         navigationController?.pushViewController(vc, animated: true)
         
-        }
+    }
     
-
+    
     override var prefersStatusBarHidden: Bool {
         return false
     }
     
-   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return fetchedCat.count
+        return fetchedCat.count
     }
     
     
@@ -138,23 +138,23 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
         cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "cell")
-                
+        
         cell?.textLabel?.text = "Id: " + fetchedCat[indexPath.row]._id
         cell?.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
         cell?.detailTextLabel?.text = "Fact: " + fetchedCat[indexPath.row].text
         cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: 15.0)
-  
+        
         return cell!
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
-            super.viewWillAppear(animated)
-            tableView .reloadData()
-        }
+        super.viewWillAppear(animated)
+        tableView .reloadData()
+    }
 }
-    
+
 
 
 
