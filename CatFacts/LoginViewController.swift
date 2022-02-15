@@ -43,6 +43,8 @@ class LoginViewController: UIViewController {
     
     let button = UIButton(type: .system)
     
+    
+    
   //  var emailTextField: UITextField
     
 
@@ -54,9 +56,6 @@ class LoginViewController: UIViewController {
         setupTextFields()
         
         view.backgroundColor = .white
-        
-        
-            
     }
     
     func setupTopView() {
@@ -82,20 +81,15 @@ class LoginViewController: UIViewController {
       
         
        DoLogin(email: email, apiKey: apiKey)
-    
     }
     
     func DoLogin(email: String?, apiKey: String?){
         
-       
-        
           let idp = APIKeyConciergeIDP(email: email!, apiKey: apiKey!)
         
-       
           Concierge.connect(with: idp)  { error in
               
-            
-              DispatchQueue.main.asyncAfter(deadline: .now() ){
+            DispatchQueue.main.asyncAfter(deadline: .now() ){
              if error == nil{
                  print("Login successful")
                  let finalLayout = UICollectionViewFlowLayout()
@@ -116,7 +110,7 @@ class LoginViewController: UIViewController {
                  concierge.title = "Concierge"
                  
                  let tabBarVC = UITabBarController()
-                tabBarVC.setViewControllers([navVCTable, navVcCollection, concierge], animated: true)
+                 tabBarVC.setViewControllers([navVCTable, navVcCollection, concierge], animated: true)
                  tabBarVC.modalPresentationStyle = .fullScreen
                 
                 self.present(tabBarVC, animated: true, completion: nil)
@@ -129,12 +123,10 @@ class LoginViewController: UIViewController {
                  if Concierge.isConnected{
                  Concierge.disconnect(){ boolean in
                  print("DISCONNCETING")
-                  
-              }
+                 }
                  }
                  
                  return
-                 
              }
              }
           }
